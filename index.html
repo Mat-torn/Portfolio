@@ -158,31 +158,31 @@
   </script>
 
   <script>
-    // scripti kuvien lataamiseen "lataa lisää" tylisesti
-  const imgs = document.querySelectorAll('.img');
-  const loadMoreBtn = document.getElementById('loadMoreBtn');
-  const itemsToShow = 6; // kuinka monta kuvaa näytetään kerralla
-  let currentIndex = 0;
+    document.addEventListener("DOMContentLoaded", function () {
+    const imgs = document.querySelectorAll('.img');
+    const loadMoreBtn = document.getElementById('loadMoreBtn');
+    const itemsToShow = 6;
+    let currentIndex = 0;
 
-  function showImages() {
-    for (let i = currentIndex; i < currentIndex + itemsToShow; i++) {
-      if (imgs[i]) {
-        imgs[i].classList.add('visible');
+    function showImages() {
+      for (let i = currentIndex; i < currentIndex + itemsToShow; i++) {
+        if (imgs[i]) {
+          imgs[i].classList.add('visible');
+        }
+      }
+
+      currentIndex += itemsToShow;
+
+      if (currentIndex >= imgs.length) {
+        loadMoreBtn.style.display = 'none';
       }
     }
 
-    currentIndex += itemsToShow;
+    // Aluksi näytetään ensimmäiset
+    showImages();
 
-    // Piilota painike, jos kaikki kuvat näkyy
-    if (currentIndex >= imgs.length) {
-      loadMoreBtn.style.display = 'none';
-    }
-  }
-
-  // Aluksi näytetään ensimmäiset
-  showImages();
-
-  loadMoreBtn.addEventListener('click', showImages);
+    loadMoreBtn.addEventListener('click', showImages);
+  });
 </script>
 
 </body>
