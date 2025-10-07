@@ -1,14 +1,15 @@
 /* Yleiset asetukset */
 * {
-  margin: 0;
-  padding: 0;
+  margin: 2px;
+  padding: 5px;
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Arial', sans-serif;
-  color: #333;
+  font-family:'Courier New', Courier, monospace;
+  color: #ffffff; /* kaikki teksti, paitsi navipalkki ja hero */
   line-height: 1.6;
+  background-color: #bc94e2;
 }
 
 /* Yläpalkki */
@@ -16,12 +17,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  border-bottom: 1px solid #ddd;
-  background: #fff;
+  padding: 3rem 6rem;
+  background: #271635; /* navipalkin väri */
   position: sticky;
   top: 0;
   z-index: 1000;
+  border-radius: 10px;
 }
 
 .navbar .logo {
@@ -38,7 +39,7 @@ body {
 
 .navbar nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: #ffffff; /* navin tekstin väri */
   font-weight: 500;
 }
 
@@ -49,6 +50,7 @@ body {
   background: #eee;
   cursor: pointer;
   border-radius: 4px;
+  font-family:'Courier New', Courier, monospace;
 }
 
 .lang-switch button:hover {
@@ -68,16 +70,17 @@ body {
   display: flex;
   align-items: center;
   gap: 2rem;
-  padding: 2rem;
-  background: #f9f9f9;
+  padding: 150px;
+  background: #ae77e2; /* heron väri */
+  color: #ffffff; /* heron tekstin väri */
+  border-radius: 10px;
 }
 
 .hero-img {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #ccc;
 }
 
 .hero-text h1 {
@@ -92,7 +95,8 @@ body {
 /* Sivujen peruslayout */
 .page-section {
   padding: 3rem 2rem;
-  border-bottom: 1px solid #eee;
+  border-bottom: 3px solid #deb7ff;
+  background-color: #bc94e2; /* loppuosan väri */
 }
 
 .page-section h2 {
@@ -113,14 +117,13 @@ body {
   justify-content: center;
   align-items: center;
   color: #fff;
-  border-radius: 4px;
   flex: 1 1 200px; /* Skaalautuvuus */
   max-width: 100%;
   box-sizing: border-box;
   overflow: hidden;
   aspect-ratio: 1 / 1;
-
   display: none;
+  border-radius: 4px;
 }
 
 /*lataa lisää toiminto */
@@ -137,6 +140,7 @@ body {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-family:'Courier New', Courier, monospace;
 }
 
 #loadMoreBtn:hover {
@@ -173,6 +177,7 @@ body {
 }
 
 .contact-form button {
+  font-family:'Courier New', Courier, monospace;
   padding: 0.8rem;
   border: none;
   background: #333;
@@ -192,10 +197,11 @@ body {
 /* Footer */
 .footer {
   text-align: center;
-  padding: 1rem;
-  background: #333;
+  padding: 2rem 4rem;
+  background: #271635;
   color: #fff;
   font-size: 0.9rem;
+  border-radius: 10px;
 }
 
 /* Responsiivisuus */
