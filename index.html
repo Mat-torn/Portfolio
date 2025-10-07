@@ -51,6 +51,8 @@
       <div class="img"><img src="images/projects/lännennopein3.png" alt="logo"></div>
       <div class="img"><img src="images/projects/bow.png" alt="logo"></div>
     </div>
+
+    <button id="loadMoreBtn" data-fi="Lataa lisää" data-en="Load more">Lataa lisää</button> 
   </section>
 
   <!-- About-sivu -->
@@ -114,11 +116,6 @@
 
       <button type="submit" data-fi="Lähetä" data-en="Send">Lähetä</button>
     </form>
-
-    <div class="contact-info">
-      <h4 data-fi="Psst! Yhteystietoni löytyvät myös tästä." data-en="Hey! My contacts can also be found here.">Psst! Yhteystietoni löytyvät myös tästä.</h4>
-      <p><strong data-fi="S-posti:" data-en="Email:">S-posti:</strong> matilda.e.tornqvist@outlook.com</p>
-    </div>
   </section>
 
   <!-- Footer -->
@@ -153,5 +150,34 @@
       navMenu.classList.toggle("active");
     });
   </script>
+
+  <script>
+    // scripti kuvien lataamiseen "lataa lisää" tylisesti
+  const imgs = document.querySelectorAll('.img');
+  const loadMoreBtn = document.getElementById('loadMoreBtn');
+  const itemsToShow = 6; // kuinka monta kuvaa näytetään kerralla
+  let currentIndex = 0;
+
+  function showImages() {
+    for (let i = currentIndex; i < currentIndex + itemsToShow; i++) {
+      if (imgs[i]) {
+        imgs[i].classList.add('visible');
+      }
+    }
+
+    currentIndex += itemsToShow;
+
+    // Piilota painike, jos kaikki kuvat näkyy
+    if (currentIndex >= imgs.length) {
+      loadMoreBtn.style.display = 'none';
+    }
+  }
+
+  // Aluksi näytetään ensimmäiset
+  showImages();
+
+  loadMoreBtn.addEventListener('click', showImages);
+</script>
+
 </body>
 </html>
