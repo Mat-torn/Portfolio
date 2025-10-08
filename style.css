@@ -6,11 +6,12 @@
 }
 
 body {
-  font-family:'Courier New', Courier, monospace;
-  color: #e7d4bb; /* kaikki teksti, paitsi navipalkki ja hero */
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: large;
+  color: #141414; /* kaikki teksti, paitsi navipalkki ja hero */
   line-height: 1.6;
-  background-color: #362f32;
-  text-shadow: 2px 2px 4px #000000;
+  background-color: #0a0808;
+  text-shadow: 2px 2px 1.5px #947b5e;
 }
 
 /* Yläpalkki */
@@ -18,13 +19,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem 6rem;
-  background: #b8b3b1; /* navipalkin väri */
+  padding: 2rem 4rem;
+  background: #e7cba7; /* navipalkin väri */
   position: sticky;
   top: 0;
   z-index: 1000;
   border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.582) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.582) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
 }
 
@@ -50,16 +51,16 @@ body {
   margin-left: 0.5rem;
   padding: 0.3rem 0.6rem;
   border: none;
-  background: #242223; /* heron väri */
+  background: #180605;
   color: #e7d4bb;
   cursor: pointer;
   border-radius: 4px;
-  font-family:'Courier New', Courier, monospace;
+  font-family: "Lucida Console", "Courier New", monospace;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .lang-switch button:hover {
-  background: #ddd;
+  background: #e7d4bb;
 }
 
 /* Hamburger-menu */
@@ -75,17 +76,18 @@ body {
   display: flex;
   align-items: center;
   gap: 2rem;
-  padding: 100px;
-  background: #0b0707; /* heron väri */
+  padding: 75px;
+  background: #180605; /* heron väri */
   color: #e7d4bb; /* heron tekstin väri */
+  font-size: large;
   border-radius: 10px;
   text-shadow: 2px 2px 4px #000000;
-  box-shadow: rgba(134, 77, 112, 0.25) 0px 54px 55px, rgba(235, 103, 103, 0.12) 0px -12px 30px, rgba(194, 64, 64, 0.582) 0px 4px 6px, rgba(236, 101, 101, 0.17) 0px 12px 13px, rgba(160, 70, 70, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(235, 145, 103, 0.12) 0px -12px 30px, rgba(194, 94, 64, 0.582) 0px 4px 6px, rgba(236, 101, 101, 0.17) 0px 12px 13px, rgba(160, 70, 70, 0.09) 0px -3px 5px;
 }
 
 .hero-img {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -102,9 +104,10 @@ body {
 /* Sivujen peruslayout */
 .page-section {
   padding: 3rem 2rem;
-  background-color: #716361; /* loppuosan väri */
+  background-color: #e7cba7; /* loppuosan väri */
   border-radius: 10px;
-  box-shadow: rgba(151, 93, 129, 0.25) 0px 54px 55px, rgba(235, 103, 103, 0.12) 0px -12px 30px, rgba(194, 64, 64, 0.582) 0px 4px 6px, rgba(236, 101, 101, 0.17) 0px 12px 13px, rgba(160, 70, 70, 0.09) 0px -3px 5px;
+  text-shadow: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(235, 145, 103, 0.12) 0px -12px 30px, rgba(194, 94, 64, 0.582) 0px 4px 6px, rgba(236, 139, 101, 0.17) 0px 12px 13px, rgba(160, 70, 70, 0.09) 0px -3px 5px;
 }
 
 .page-section h2 {
@@ -142,12 +145,12 @@ body {
   margin: 20px auto;
   display: block;
   padding: 10px 20px;
-  background-color: #242223;
+  background-color: #180605;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-family:'Courier New', Courier, monospace;
+  font-family: "Lucida Console", "Courier New", monospace;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
@@ -186,10 +189,10 @@ body {
 }
 
 .contact-form button {
-  font-family:'Courier New', Courier, monospace;
+  font-family: "Lucida Console", "Courier New", monospace;
   padding: 0.8rem;
   border: none;
-  background: #333;
+  background: #180605;
   color: #fff;
   cursor: pointer;
   border-radius: 4px;
@@ -197,22 +200,19 @@ body {
 }
 
 .contact-form button:hover {
-  background: #555;
-}
-
-.contact-info {
-  margin-top: 2rem;
+  background: #e7d4bb;
 }
 
 /* Footer */
 .footer {
   text-align: center;
+  text-shadow: none;
   padding: 2rem 4rem;
-  background: #b8b3b1;
-  color: #000000;
+  background: #180605;
+  color: #e7d4bb;
   font-size: 0.9rem;
   border-radius: 10px;
-  box-shadow: rgba(182, 152, 88, 0.137) 0px 54px 55px, rgba(235, 178, 103, 0.12) 0px -12px 30px, rgba(194, 138, 64, 0.582) 0px 4px 6px, rgba(236, 182, 101, 0.17) 0px 12px 13px, rgba(160, 128, 70, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(235, 145, 103, 0.12) 0px -12px 30px, rgba(194, 94, 64, 0.582) 0px 4px 6px, rgba(236, 101, 101, 0.17) 0px 12px 13px, rgba(160, 70, 70, 0.09) 0px -3px 5px;
 }
 
 /* Responsiivisuus */
@@ -256,4 +256,14 @@ body {
   .item {
     height: 120px;
   }
+}
+
+.fa {
+  padding: 10px;
+  size: 500px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  background: none;
+  color: #e7d4bb;
 }
