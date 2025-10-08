@@ -7,9 +7,10 @@
 
 body {
   font-family:'Courier New', Courier, monospace;
-  color: #ffffff; /* kaikki teksti, paitsi navipalkki ja hero */
+  color: #e7d4bb; /* kaikki teksti, paitsi navipalkki ja hero */
   line-height: 1.6;
-  background-color: #bc94e2;
+  background-color: #362f32;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 /* Yläpalkki */
@@ -18,12 +19,13 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 3rem 6rem;
-  background: #271635; /* navipalkin väri */
+  background: #b8b3b1; /* navipalkin väri */
   position: sticky;
   top: 0;
   z-index: 1000;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.582) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
 }
 
 .navbar .logo {
@@ -40,7 +42,7 @@ body {
 
 .navbar nav ul li a {
   text-decoration: none;
-  color: #ffffff; /* navin tekstin väri */
+  color: #000000; /* navin tekstin väri */
   font-weight: 500;
 }
 
@@ -48,7 +50,8 @@ body {
   margin-left: 0.5rem;
   padding: 0.3rem 0.6rem;
   border: none;
-  background: #eee;
+  background: #242223; /* heron väri */
+  color: #e7d4bb;
   cursor: pointer;
   border-radius: 4px;
   font-family:'Courier New', Courier, monospace;
@@ -72,11 +75,12 @@ body {
   display: flex;
   align-items: center;
   gap: 2rem;
-  padding: 150px;
-  background: #ae77e2; /* heron väri */
-  color: #ffffff; /* heron tekstin väri */
+  padding: 100px;
+  background: #0b0707; /* heron väri */
+  color: #e7d4bb; /* heron tekstin väri */
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  text-shadow: 2px 2px 4px #000000;
+  box-shadow: rgba(134, 77, 112, 0.25) 0px 54px 55px, rgba(235, 103, 103, 0.12) 0px -12px 30px, rgba(194, 64, 64, 0.582) 0px 4px 6px, rgba(236, 101, 101, 0.17) 0px 12px 13px, rgba(160, 70, 70, 0.09) 0px -3px 5px;
 }
 
 .hero-img {
@@ -98,9 +102,9 @@ body {
 /* Sivujen peruslayout */
 .page-section {
   padding: 3rem 2rem;
-  background-color: #bc94e2; /* loppuosan väri */
+  background-color: #716361; /* loppuosan väri */
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  box-shadow: rgba(151, 93, 129, 0.25) 0px 54px 55px, rgba(235, 103, 103, 0.12) 0px -12px 30px, rgba(194, 64, 64, 0.582) 0px 4px 6px, rgba(236, 101, 101, 0.17) 0px 12px 13px, rgba(160, 70, 70, 0.09) 0px -3px 5px;
 }
 
 .page-section h2 {
@@ -138,7 +142,7 @@ body {
   margin: 20px auto;
   display: block;
   padding: 10px 20px;
-  background-color: #663399;
+  background-color: #242223;
   color: white;
   border: none;
   border-radius: 4px;
@@ -148,7 +152,7 @@ body {
 }
 
 #loadMoreBtn:hover {
-  background-color: #5a2c85;
+  background-color: #e7d4bb;
 }
 
 .img img {
@@ -204,11 +208,11 @@ body {
 .footer {
   text-align: center;
   padding: 2rem 4rem;
-  background: #271635;
-  color: #fff;
+  background: #b8b3b1;
+  color: #000000;
   font-size: 0.9rem;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  box-shadow: rgba(182, 152, 88, 0.137) 0px 54px 55px, rgba(235, 178, 103, 0.12) 0px -12px 30px, rgba(194, 138, 64, 0.582) 0px 4px 6px, rgba(236, 182, 101, 0.17) 0px 12px 13px, rgba(160, 128, 70, 0.09) 0px -3px 5px;
 }
 
 /* Responsiivisuus */
